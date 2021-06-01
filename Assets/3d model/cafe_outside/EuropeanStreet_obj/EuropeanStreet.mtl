@@ -1,0 +1,515 @@
+newmtl BldgAGray
+Ns 10
+Ka 0 0 0
+Kd 0.6 0.6 0.6
+Ks 0.121569 0.121569 0.121569
+d 1
+newmtl BldgCAwningA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgC_awningA.jpg
+map_Bump ES_bldgC_awningA_nrm.jpg
+Bump ES_bldgC_awningA_nrm.jpg
+d 1
+newmtl BldgCRoofA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgC_RoofA.jpg
+map_Bump ES_bldgC_RoofA_nrm.jpg
+Bump ES_bldgC_RoofA_nrm.jpg
+d 1
+newmtl BldgCWallM
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgC_wallM.jpg
+map_Bump ES_bldgC_wallM_nrm.jpg
+Bump ES_bldgC_wallM_nrm.jpg
+d 1
+newmtl BldgCWindowA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgC_WindowA.jpg
+map_Bump ES_bldgC_WindowA_nrm.jpg
+Bump ES_bldgC_WindowA_nrm.jpg
+d 1
+newmtl GenMetal
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_gen_metal.jpg
+map_Bump ES_gen_metal_nrm.jpg
+Bump ES_gen_metal_nrm.jpg
+d 1
+newmtl BldgCFenceA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd ES_bldgC_FenceA.jpg
+map_Bump ES_bldgC_FenceA_nrm.jpg
+Bump ES_bldgC_FenceA_nrm.jpg
+d 1
+map_d  ES_bldgC_FenceA_trn.jpg
+newmtl BldgABannersA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_bannersA.jpg
+map_Bump ES_bldgA_bannersA_nrm.jpg
+Bump ES_bldgA_bannersA_nrm.jpg
+d 1
+newmtl BldgDRoofA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgD_roofA.jpg
+map_Bump ES_bldgD_roofA_nrm.jpg
+Bump ES_bldgD_roofA_nrm.jpg
+d 1
+newmtl GenMetalD
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_gen_metalD.jpg
+map_Bump ES_gen_metalD_nrm.jpg
+Bump ES_gen_metalD_nrm.jpg
+d 1
+newmtl BldgBWallC
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_wallC.jpg
+map_Bump ES_bldgB_wallC_nrm.jpg
+Bump ES_bldgB_wallC_nrm.jpg
+d 1
+newmtl BldgBWallN
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_wallN.jpg
+map_Bump ES_bldgB_wallN_nrm.jpg
+Bump ES_bldgB_wallN_nrm.jpg
+d 1
+newmtl BldgBRoofA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_RoofA.jpg
+map_Bump ES_bldgB_RoofA_nrm.jpg
+Bump ES_bldgB_RoofA_nrm.jpg
+d 1
+newmtl BldgBFenceA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd ES_bldgB_FenceA.jpg
+map_Bump ES_bldgB_FenceA_nrm.jpg
+Bump ES_bldgB_FenceA_nrm.jpg
+d 1
+map_d  ES_bldgB_FenceA_trn.jpg
+newmtl BldgBWindowA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_WindowA.jpg
+map_Bump ES_bldgB_WindowA_nrm.jpg
+Bump ES_bldgB_WindowA_nrm.jpg
+d 1
+newmtl BldgBWallM
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_wallM.jpg
+map_Bump ES_bldgB_wallM_nrm.jpg
+Bump ES_bldgB_wallM_nrm.jpg
+d 1
+newmtl BldgBLedgeA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_LedgeA.jpg
+map_Bump ES_bldgB_LedgeA_nrm.jpg
+Bump ES_bldgB_LedgeA_nrm.jpg
+d 1
+newmtl BldgBDoorA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_DoorA.jpg
+map_Bump ES_bldgB_DoorA_nrm.jpg
+Bump ES_bldgB_DoorA_nrm.jpg
+d 1
+newmtl BldgBAwningA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_awningA.jpg
+map_Bump ES_bldgA_awningA_nrm.jpg
+Bump ES_bldgA_awningA_nrm.jpg
+d 1
+newmtl BldgBWoodsA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_WoodsA.jpg
+map_Bump ES_bldgB_WoodsA_nrm.jpg
+Bump ES_bldgB_WoodsA_nrm.jpg
+d 1
+newmtl BldgAShopsP
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_shopsP.jpg
+map_Bump ES_bldgA_shopsP_nrm.jpg
+Bump ES_bldgA_shopsP_nrm.jpg
+d 1
+newmtl BldgBShopsB
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_ShopsB.jpg
+map_Bump ES_bldgB_ShopsB_nrm.jpg
+Bump ES_bldgB_ShopsB_nrm.jpg
+d 1
+newmtl BldgFWallA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgF_wallA.jpg
+map_Bump ES_bldgF_wallA_nrm.jpg
+Bump ES_bldgF_wallA_nrm.jpg
+d 1
+newmtl BldgFWallB
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgF_wallB.jpg
+map_Bump ES_bldgF_wallB_nrm.jpg
+Bump ES_bldgF_wallB_nrm.jpg
+d 1
+newmtl BldgBShopsA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_ShopsA.jpg
+map_Bump ES_bldgB_ShopsA_nrm.jpg
+Bump ES_bldgB_ShopsA_nrm.jpg
+d 1
+newmtl GenWoodsA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_gen_woodsA.jpg
+map_Bump ES_gen_woodsA_nrm.jpg
+Bump ES_gen_woodsA_nrm.jpg
+d 1
+newmtl BldgADoorM
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_doorM.jpg
+map_Bump ES_bldgA_doorM_nrm.jpg
+Bump ES_bldgA_doorM_nrm.jpg
+d 1
+newmtl BldgARoofR
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_RoofR.jpg
+map_Bump ES_bldgA_RoofR_nrm.jpg
+Bump ES_bldgA_RoofR_nrm.jpg
+d 1
+newmtl BldgAAwningA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_awningA.jpg
+map_Bump ES_bldgA_awningA_nrm.jpg
+Bump ES_bldgA_awningA_nrm.jpg
+d 1
+newmtl BldgAWallB
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_wallB.jpg
+map_Bump ES_bldgA_wallB_nrm.jpg
+Bump ES_bldgA_wallB_nrm.jpg
+d 1
+newmtl BldgAWallM
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_wallM.jpg
+map_Bump ES_bldgA_wallM_nrm.jpg
+Bump ES_bldgA_wallM_nrm.jpg
+d 1
+newmtl BldgAShopsD
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_shopsD.jpg
+map_Bump ES_bldgA_shopsD_nrm.jpg
+Bump ES_bldgA_shopsD_nrm.jpg
+d 1
+newmtl BldgAWallC
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_wallC.jpg
+map_Bump ES_bldgA_wallC_nrm.jpg
+Bump ES_bldgA_wallC_nrm.jpg
+d 1
+newmtl BldgDWallC
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgD_WallC.jpg
+map_Bump ES_bldgD_WallC_nrm.jpg
+Bump ES_bldgD_WallC_nrm.jpg
+d 1
+newmtl BldgDWallB
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgD_WallB.jpg
+map_Bump ES_bldgD_WallB_nrm.jpg
+Bump ES_bldgD_WallB_nrm.jpg
+d 1
+newmtl BldgDFenceA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd ES_bldgD_FenceA.jpg
+map_Bump ES_bldgD_FenceA_nrm.jpg
+Bump ES_bldgD_FenceA_nrm.jpg
+d 1
+map_d  ES_bldgD_FenceA_trn.jpg
+newmtl BldgDWindowM
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgD_WindowM.jpg
+map_Bump ES_bldgD_WindowM_nrm.jpg
+Bump ES_bldgD_WindowM_nrm.jpg
+d 1
+newmtl BldgAShopsA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_shopsA.jpg
+map_Bump ES_bldgA_shopsA_nrm.jpg
+Bump ES_bldgA_shopsA_nrm.jpg
+d 1
+newmtl BldgARoofA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_RoofA.jpg
+map_Bump ES_bldgA_RoofA_nrm.jpg
+Bump ES_bldgA_RoofA_nrm.jpg
+d 1
+newmtl BldgAFenceA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd ES_bldgA_fenceA.jpg
+map_Bump ES_bldgA_fenceA_nrm.jpg
+Bump ES_bldgA_fenceA_nrm.jpg
+d 1
+map_d  ES_bldgA_fenceA_trn.jpg
+newmtl BldgAWindowB
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_windowA.jpg
+map_Bump ES_bldgA_windowA_nrm.jpg
+Bump ES_bldgA_windowA_nrm.jpg
+d 1
+newmtl BldgAMetalD
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_gen_metalD.jpg
+map_Bump ES_gen_metalD_nrm.jpg
+Bump ES_gen_metalD_nrm.jpg
+d 1
+newmtl BldgBgrDoorA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgB_grDoorA.jpg
+map_Bump ES_bldgB_grDoorA_nrm.jpg
+Bump ES_bldgB_grDoorA_nrm.jpg
+d 1
+newmtl LightsLamp2
+Ns 20
+Ka 5 5 5
+Kd 0 0.164706 1
+Ks 0.623529 0.635294 1
+d 1
+newmtl BldgHMainA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgH_mainA.jpg
+map_Bump ES_bldgH_mainA_nrm.jpg
+Bump ES_bldgH_mainA_nrm.jpg
+d 1
+newmtl BldgFRoofA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgF_roofA.jpg
+map_Bump ES_bldgF_roofA_nrm.jpg
+Bump ES_bldgF_roofA_nrm.jpg
+d 1
+newmtl BldgAShopsT2
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_shopsT2.jpg
+map_Bump ES_bldgA_shopsT2_nrm.jpg
+Bump ES_bldgA_shopsT2_nrm.jpg
+d 1
+newmtl BldgAShopsT1
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_shopsT1.jpg
+map_Bump ES_bldgA_shopsT1_nrm.jpg
+Bump ES_bldgA_shopsT1_nrm.jpg
+d 1
+newmtl BldgAShopsS
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgA_shopsS.jpg
+map_Bump ES_bldgA_shopsS_nrm.jpg
+Bump ES_bldgA_shopsS_nrm.jpg
+d 1
+newmtl LightsLamp
+Ns 20
+Ka 5 5 5
+Kd 0 0.164706 1
+Ks 0.623529 0.635294 1
+d 1
+newmtl LightsLamp3
+Ns 20
+Ka 5 5 5
+Kd 0 0.164706 1
+Ks 0.623529 0.635294 1
+d 1
+newmtl RoadPathway
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_road_pathway.jpg
+map_Bump ES_road_pathway_nrm.jpg
+Bump ES_road_pathway_nrm.jpg
+d 1
+newmtl RoadPathwayS
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+map_Kd ES_road_pathwayS.jpg
+map_Bump ES_road_pathwayS_nrm.jpg
+Bump ES_road_pathwayS_nrm.jpg
+d 1
+map_d  ES_road_pathwayS_trn.jpg
+newmtl RoadMain
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_road_main.jpg
+map_Bump ES_road_main_nrm.jpg
+Bump ES_road_main_nrm.jpg
+d 1
+newmtl BldgEWallB
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgE_wallB.jpg
+map_Bump ES_bldgE_wallB_nrm.jpg
+Bump ES_bldgE_wallB_nrm.jpg
+d 1
+newmtl BldgEWallA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgE_wallA.jpg
+map_Bump ES_bldgE_wallA_nrm.jpg
+Bump ES_bldgE_wallA_nrm.jpg
+d 1
+newmtl BldgFShopsA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgF_shopsA.jpg
+map_Bump ES_bldgF_shopsA_nrm.jpg
+Bump ES_bldgF_shopsA_nrm.jpg
+d 1
+newmtl BldgERoofA
+Ns 10
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+map_Kd ES_bldgE_roofA.jpg
+map_Bump ES_bldgE_roofA_nrm.jpg
+Bump ES_bldgE_roofA_nrm.jpg
+d 1
