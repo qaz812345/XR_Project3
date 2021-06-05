@@ -1,0 +1,45 @@
+1.不能沒有你
+ (誰是陪伴梵谷一生的人? 朋友高更、弟弟西奧、啟蒙者莫內)
+2.完全沒印象
+(請問下列何者不在印象派之列? 竇加、雷諾瓦、高第、莫內 )
+3.穿越藝文通 
+(誰是對交大校園美感貢獻最大的藝術家? 楊英風、殷之浩、田家炳)
+4.復興文藝魂 
+(文藝復興強調人性的崇高，反對神學權威以及封建制度的權威[是非])
+5.原色小博士
+(請問色彩三原色是哪幾種顏色? (紅、綠、藍)、(青、洋紅、黃)、(紅、黃、藍))
+6.飲水必思源 
+(梵谷是哪一國人?比利時、德國、荷蘭、英國)
+7.戀戀鏡中人
+(梵谷一生中一共畫過幾張自己的自畫像? 10,20,40)
+8.數學在藝術
+ (請問梵谷一幅畫中最多畫過幾朵向日葵? 15 ,17, 19)
+9.畫也著作權 
+(請問下列影視作品中，何者與梵谷沒有關係? 夢,永恆之門,隱藏的畫家,星夜之謎)
+
+
+paintings
+0_0 Irises (Vincent Van Gogh)
+0_1 The House among the Roses (Claude Monet)
+1_0 Wheatfield with Crows (Vincent van Gogh)
+1_1 La Luzerne, Saint-Denis(聖丹尼的紫花苜蓿) (Georges Seurat)
+2_0 The Yellow House (Vincent van Gogh)
+2_1 Mont Sainte-Victoire (Paul Cezanne)
+3_0 Rowing Boats on the Banks of the Oise (Vincent Van Gogh)
+3_1 Houses on the Achterzaan (Claude Monet)
+4_0 Green Wheat Field with Cypress (Vincent van Gogh)
+4_1 Landscape with Trees (Pierre-Auguste Renoir)
+5_0 Starry Night Over The Rhone (Vincent van Gogh)
+5_1 A Seascape, Shipping by Moonlight (Claude Monet)
+6_0 Noon - Rest from Work (after Millet) (Vincent Van Gogh)
+6_1 Resting, Peasant Girl Lying on the Grass (Camille Pissarro)
+7_0 Sunflowers (Vincent Van Gogh)
+7_1 Still Life with Sunflowers on an armchair (Paul Gauguin)
+8_0 Comedores de Batatas (Vincent Van Gogh)
+8_1 The sister of charity (Paul Gauguin)
+9_0 The Church in Auvers-sur-Oise (Vincent Van Gogh)
+9_1 Calvaire et église de Nizon (Pierre-Auguste Renoir)
+10_0 Van Gogh's chair (Vincent Van Gogh)
+10_1 Impression, Sunrise (Claude Monet)
+11_0 Dr Paul Gachet (Vincent Van Gogh)
+11_1 Vieux vigneron (Camille Pissarro)
