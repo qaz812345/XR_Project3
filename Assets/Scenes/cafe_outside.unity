@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30533114, g: 0.39654619, b: 0.5792069, a: 1}
+  m_IndirectSpecularColor: {r: 0.30474246, g: 0.39533505, b: 0.57898456, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1228,6 +1228,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EuropeanStreet1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570019f10ca434ce4b33b997aba3f9e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1737084745407000395, guid: 570019f10ca434ce4b33b997aba3f9e0,
         type: 3}
       propertyPath: m_Materials.Array.data[7]
@@ -1248,6 +1253,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: aed857be0d473433d91903165ffed588, type: 2}
+    - target: {fileID: 6613031366344029114, guid: 570019f10ca434ce4b33b997aba3f9e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7712671293770614307, guid: 570019f10ca434ce4b33b997aba3f9e0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8413,7 +8423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &924515150532584449
 MeshRenderer:
   m_ObjectHideFlags: 0
