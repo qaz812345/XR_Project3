@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 55177174caf57bc46a7eb89f24ed476a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: jf-openhuninn-1.0
+  fontNames:
+  - jf-openhuninn-1.0
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 35f801ed683bed742805732239866c7b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,14 +19,14 @@ public class QuestionController : MonoBehaviour
     private Text bingoText;
     private int curQuesNo = -1;
     private bool[,] jiugongge = new bool[3,3]{{false, false, false}, {false, false, false}, {false, false, false}};
-
+    private bool is_bingoed = false;
     void Start()
     {
         questionUI.SetActive(false);
         resultUI.SetActive(false);
-        questionText = questionUI.transform.GetChild(0).GetComponent<Text>();
-        resultText = resultUI.transform.GetChild(0).GetComponent<Text>();
-        bingoText = resultUI.transform.GetChild(1).GetComponent<Text>();
+        questionText = questionUI.transform.GetChild(1).GetComponent<Text>();
+        resultText = resultUI.transform.GetChild(1).GetComponent<Text>();
+        bingoText = resultUI.transform.GetChild(2).GetComponent<Text>();
         /*for (int i = 0; i < titles.Count; i++)
         {
             titles[i].text = questions[i].GetComponent<Question>().title;
@@ -106,67 +106,79 @@ public class QuestionController : MonoBehaviour
 
     private void checkLine()
     {
-        bool is_line = true;
-        
-        for (int i = 0; i < 3; i++)
+        if (!is_bingoed)
         {
-            is_line = true;
-            for (int j = 0; j < 3; j++)
+            bool is_line = true;
+
+            for (int i = 0; i < 3; i++)
             {
-                // check horizontal line
-                if (jiugongge[i, j] == false)
+                is_line = true;
+                for (int j = 0; j < 3; j++)
                 {
-                    is_line = false;
-                    break;
-                }   
-            }
-            if (is_line)
-                break;
-        }
-        if (is_line)
-        {
-            Debug.Log("Bingo!");
-            bingoText.text = "Bingo!";
-            return;
-        }
-            
-        // check vertical line
-        for (int i = 0; i < 3; i++)
-        {
-            is_line = true;
-            for (int j = 0; j < 3; j++)
-            {
-                // check horizontal line
-                if (jiugongge[j, i] == false)
-                {
-                    is_line = false;
-                    break;
+                    // check horizontal line
+                    if (jiugongge[i, j] == false)
+                    {
+                        is_line = false;
+                        break;
+                    }
                 }
-                    
+                if (is_line)
+                    break;
             }
             if (is_line)
-                break;
+            {
+                Debug.Log("Bingo!");
+                bingoText.text = "Bingo!";
+                is_bingoed = true;
+                return;
+            }
+
+            // check vertical line
+            for (int i = 0; i < 3; i++)
+            {
+                is_line = true;
+                for (int j = 0; j < 3; j++)
+                {
+                    // check horizontal line
+                    if (jiugongge[j, i] == false)
+                    {
+                        is_line = false;
+                        break;
+                    }
+
+                }
+                if (is_line)
+                    break;
+            }
+            if (is_line)
+            {
+                Debug.Log("Bingo!");
+                bingoText.text = "Bingo!";
+                is_bingoed = true;
+                return;
+            }
+            // check diagonal line
+            if (jiugongge[0, 0] && jiugongge[1, 1] && jiugongge[2, 2])
+            {
+                Debug.Log("Bingo!");
+                bingoText.text = "Bingo!";
+                is_bingoed = true;
+                return;
+            }
+
+            if (jiugongge[0, 2] && jiugongge[1, 1] && jiugongge[2, 0])
+            {
+                Debug.Log("Bingo!");
+                bingoText.text = "Bingo!";
+                is_bingoed = true;
+                return;
+            }
         }
-        if (is_line)
+        else
         {
-            Debug.Log("Bingo!");
-            bingoText.text = "Bingo!";
-            return;
+            bingoText.text = "Already bingo!";
         }
-        // check diagonal line
-        if (jiugongge[0, 0] && jiugongge[1, 1] && jiugongge[2, 2])
-        {
-            Debug.Log("Bingo!");
-            bingoText.text = "Bingo!";
-            return;
-        }
-            
-        if (jiugongge[0, 2] && jiugongge[1, 1] && jiugongge[2, 0])
-        {
-            Debug.Log("Bingo!");
-            bingoText.text = "Bingo!";
-            return;
-        }
+        
             
     }
 }

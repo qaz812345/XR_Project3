@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 00b5bc0382d244d71b75c7b5346bb226
 PrefabImporter:
+=======
+<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity.meta
+guid: 3e9a938a457c525488efb9a8dcbba637
+DefaultImporter:
+=======
+guid: 00b5bc0382d244d71b75c7b5346bb226
+PrefabImporter:
+>>>>>>> fe50265f2d4c7047a3c2f2d8fa0003e1ccbb5a69:Assets/uploads_files_2652933_corner_haussman_facade.prefab.meta
+>>>>>>> Stashed changes
   externalObjects: {}
   userData: 
   assetBundleName: 
