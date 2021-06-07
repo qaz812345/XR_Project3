@@ -4606,6 +4606,41 @@ PrefabInstance:
       propertyPath: rayTransform
       value: 
       objectReference: {fileID: 3917090888102097336}
+    - target: {fileID: 4567785966049195656, guid: c341d53d7ab6aef4984188207c78bed6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd0bb729cb6159b4ab21c5f62cad24ee, type: 3}
+    - target: {fileID: 4567785966049195656, guid: c341d53d7ab6aef4984188207c78bed6,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.32809716
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567785966049195656, guid: c341d53d7ab6aef4984188207c78bed6,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.9514408
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567785966049195656, guid: c341d53d7ab6aef4984188207c78bed6,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567785966049195656, guid: c341d53d7ab6aef4984188207c78bed6,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0.09438412
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567785966049195656, guid: c341d53d7ab6aef4984188207c78bed6,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.51286
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567785966049195656, guid: c341d53d7ab6aef4984188207c78bed6,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c341d53d7ab6aef4984188207c78bed6, type: 3}
 --- !u!1001 &1647691728
@@ -20059,7 +20094,6 @@ GameObject:
   - component: {fileID: 3917090887928819978}
   - component: {fileID: 3917090887928819989}
   - component: {fileID: 3917090887928819976}
-  - component: {fileID: 3917090887928820079}
   m_Layer: 2
   m_Name: PlayerController
   m_TagString: Untagged
@@ -20112,21 +20146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b71d1996d67004241a3b69960856ffcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3917090887928820079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3917090887928819985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  usePerEyeCameras: 0
-  useFixedUpdateForTracking: 0
-  disableEyeAnchorCameras: 0
 --- !u!114 &3917090888021354184
 MonoBehaviour:
   m_ObjectHideFlags: 0
