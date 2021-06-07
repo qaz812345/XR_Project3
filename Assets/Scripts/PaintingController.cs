@@ -19,7 +19,7 @@ public class PaintingController : MonoBehaviour
 
     void Start()
     {
-        Destroy(startUI,4.0f);
+        Destroy(startUI,5.0f);
         ipad.SetActive(false);
         resultUI.SetActive(false);
         correct_borad.SetActive(false);
