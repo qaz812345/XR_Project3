@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/VangoghRoom.unity
     guid: b279f4eebb09a1b4a94d6f55a250063f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Cafeoutside.unity
     guid: bbb040349675b4d43a7b4b32d73a2c86
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Cafeinside1.unity
     guid: 7c2baccd07d6ee84f819c143cd55b0a8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/StarryNight1.unity
     guid: 15297fde7167ae14daf6b5e6f87a8138
   - enabled: 1
