@@ -11,12 +11,13 @@ public class changeimg : MonoBehaviour
     public Image oldImg;
     public Sprite newImg;
     public Image clickImg;
-   // public Image flashImg;
-    
+    public GameObject ipad;
+    // public Image flashImg;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //ipad.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,8 +42,17 @@ public class changeimg : MonoBehaviour
     {
         flashImg.StartFlashimg(.25f, .5f, flashcolor);
     }
-   public void Lightflash()
+    public void Lightflash()
     {
-        camlight.StartFlashlight(.25f, .6f, 30.0f,lightcolor);
+        camlight.StartFlashlight(.25f, .6f, 30.0f, lightcolor);
+    }
+    public void loadInfo(int input)
+    {
+        int no = (input / 10) - 1;
+        int ans = input % 10;
+        if (ans == 1)
+            ipad.SetActive(true);
+        else
+            ipad.SetActive(false);
     }
 }
