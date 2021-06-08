@@ -6,21 +6,25 @@ using UnityEngine.EventSystems;
 
 public class QuestionController : MonoBehaviour
 {
-    //public GameObject myEventSystem;
     public List<Button> titles;
     public List<GameObject> questions;
     public GameObject questionUI;
     public GameObject resultUI;
     public List<GameObject> buttons;
-    /*public List<Sprite> normal_btn;
-    public List<Sprite> correct_btn;
-    public List<Sprite> incorrect_btn;*/
+    public AudioSource window_pop, window_close, correct_sound, incorrect_sound, bingo_sound;
+    public Animator boss_animator;
     private Text questionText;
     private Text resultText;
     private Text bingoText;
     private int curQuesNo = -1;
     private bool[,] jiugongge = new bool[3,3]{{false, false, false}, {false, false, false}, {false, false, false}};
     private bool is_bingoed = false;
+
+    public bool IsBingo()
+    {
+        return is_bingoed;
+    }
+
     void Start()
     {
         questionUI.SetActive(false);
@@ -28,6 +32,7 @@ public class QuestionController : MonoBehaviour
         questionText = questionUI.transform.GetChild(1).GetComponent<Text>();
         resultText = resultUI.transform.GetChild(1).GetComponent<Text>();
         bingoText = resultUI.transform.GetChild(2).GetComponent<Text>();
+        boss_animator.SetBool("is_bingo", false);
     }
 
     public void loadQuestion(int no)
@@ -35,6 +40,7 @@ public class QuestionController : MonoBehaviour
         if (questionUI.activeSelf == false && questions[no].GetComponent<Question>().GetAnswered() == false)
         {
             // load UI content
+            window_pop.Play();
             curQuesNo = no;
             resultUI.SetActive(false);
             questionUI.SetActive(true);
@@ -43,7 +49,6 @@ public class QuestionController : MonoBehaviour
             {
                 if (i < questions[no].GetComponent<Question>().options.Count)
                 {
-                    //buttons[i].GetComponent<Image>().sprite = normal_btn[i];
                     buttons[i].SetActive(true);
                     buttons[i].GetComponent<Button>().transform.GetChild(0).GetComponent<Text>().text = questions[no].GetComponent<Question>().options[i].GetContent();
                 }
@@ -58,7 +63,6 @@ public class QuestionController : MonoBehaviour
         {
             Debug.Log("Question loaded. Please answer the question: " + curQuesNo);
         }
-        //titles[curQuesNo].interactable = false;
     }
 
     public void checkAnswer(int no)
@@ -69,9 +73,9 @@ public class QuestionController : MonoBehaviour
         Debug.Log("Selected option: " + questions[curQuesNo].GetComponent<Question>().options[no].GetContent());
         if (questions[curQuesNo].GetComponent<Question>().options[no].IsAnswer())
         {
-            //buttons[no].GetComponent<Image>().sprite = correct_btn[no];
             Debug.Log("You are correct!!");
             resultText.text = "Correct!";
+            correct_sound.Play();
             questions[curQuesNo].GetComponent<Question>().SetCorrect(true);
             int i = curQuesNo / 3;
             int j = curQuesNo % 3;
@@ -81,9 +85,9 @@ public class QuestionController : MonoBehaviour
         }
         else
         {
-            //buttons[no].GetComponent<Image>().sprite = incorrect_btn[no];
             Debug.Log("You are Wrang!!");
             resultText.text = "Incorrect!";
+            incorrect_sound.Play();
             questions[curQuesNo].GetComponent<Question>().SetCorrect(false);
             changeTexture(curQuesNo, new Color(0.78f, 0.33f, 0.33f));//Color.red
         }       
@@ -91,6 +95,7 @@ public class QuestionController : MonoBehaviour
 
     public void closeUI(GameObject UI)
     {
+        window_close.Play();
         UI.SetActive(false);
     }
 
@@ -127,9 +132,7 @@ public class QuestionController : MonoBehaviour
             }
             if (is_line)
             {
-                Debug.Log("Bingo!");
-                bingoText.text = "Bingo!";
-                is_bingoed = true;
+                Bingo();
                 return;
             }
 
@@ -152,33 +155,34 @@ public class QuestionController : MonoBehaviour
             }
             if (is_line)
             {
-                Debug.Log("Bingo!");
-                bingoText.text = "Bingo!";
-                is_bingoed = true;
+                Bingo();
                 return;
             }
             // check diagonal line
             if (jiugongge[0, 0] && jiugongge[1, 1] && jiugongge[2, 2])
             {
-                Debug.Log("Bingo!");
-                bingoText.text = "Bingo!";
-                is_bingoed = true;
+                Bingo();
                 return;
             }
 
             if (jiugongge[0, 2] && jiugongge[1, 1] && jiugongge[2, 0])
             {
-                Debug.Log("Bingo!");
-                bingoText.text = "Bingo!";
-                is_bingoed = true;
+                Bingo();
                 return;
             }
         }
         else
         {
             bingoText.text = "Already bingo!";
-        }
-        
-            
+        }     
+    }
+
+    private void Bingo()
+    {
+        Debug.Log("Bingo!");
+        bingoText.text = "Bingo!";
+        is_bingoed = true;
+        bingo_sound.Play();
+        boss_animator.SetBool("is_bingo", true);
     }
 }
