@@ -45,6 +45,7 @@ public class changeimg : MonoBehaviour
     public void Lightflash()
     {
         camlight.StartFlashlight(.25f, .6f, 30.0f, lightcolor);
+        Destroy(camlight, 0.6f);
     }
     public void loadInfo(int input)
     {
