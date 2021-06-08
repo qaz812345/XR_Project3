@@ -9940,19 +9940,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 958ef897e40c23245933d8fafaef9f3e, type: 3}
-=======
   serializedVersion: 2
   m_Size: {x: 14.65, y: 29.16, z: 16.05}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> ebfad011a857138dff5fe73f236502de28b0db8d
-=======
->>>>>>> da9f5f875079b1979995f28c0ba716214c2d0683
->>>>>>> Stashed changes
-=======
->>>>>>> da9f5f875079b1979995f28c0ba716214c2d0683
->>>>>>> Stashed changes
 --- !u!4 &1919909246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1008543321271992396, guid: e5c9e9a941ee15f4dbab447d7580be29,

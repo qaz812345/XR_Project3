@@ -12,9 +12,9 @@ public class QuestionController : MonoBehaviour
     public GameObject questionUI;
     public GameObject resultUI;
     public List<GameObject> buttons;
-    public List<Sprite> normal_btn;
+    /*public List<Sprite> normal_btn;
     public List<Sprite> correct_btn;
-    public List<Sprite> incorrect_btn;
+    public List<Sprite> incorrect_btn;*/
     private Text questionText;
     private Text resultText;
     private Text bingoText;
@@ -43,7 +43,7 @@ public class QuestionController : MonoBehaviour
             {
                 if (i < questions[no].GetComponent<Question>().options.Count)
                 {
-                    buttons[i].GetComponent<Image>().sprite = normal_btn[i];
+                    //buttons[i].GetComponent<Image>().sprite = normal_btn[i];
                     buttons[i].SetActive(true);
                     buttons[i].GetComponent<Button>().transform.GetChild(0).GetComponent<Text>().text = questions[no].GetComponent<Question>().options[i].GetContent();
                 }
@@ -63,15 +63,15 @@ public class QuestionController : MonoBehaviour
 
     public void checkAnswer(int no)
     {
-        //questionUI.SetActive(false);
-        //resultUI.SetActive(true);
+        questionUI.SetActive(false);
+        resultUI.SetActive(true);
         questions[curQuesNo].GetComponent<Question>().SetAnswered(true);
         Debug.Log("Selected option: " + questions[curQuesNo].GetComponent<Question>().options[no].GetContent());
         if (questions[curQuesNo].GetComponent<Question>().options[no].IsAnswer())
         {
-            buttons[no].GetComponent<Image>().sprite = correct_btn[no];
+            //buttons[no].GetComponent<Image>().sprite = correct_btn[no];
             Debug.Log("You are correct!!");
-            //resultText.text = "Correct!";
+            resultText.text = "Correct!";
             questions[curQuesNo].GetComponent<Question>().SetCorrect(true);
             int i = curQuesNo / 3;
             int j = curQuesNo % 3;
@@ -81,9 +81,9 @@ public class QuestionController : MonoBehaviour
         }
         else
         {
-            buttons[no].GetComponent<Image>().sprite = incorrect_btn[no];
+            //buttons[no].GetComponent<Image>().sprite = incorrect_btn[no];
             Debug.Log("You are Wrang!!");
-            //resultText.text = "Incorrect!";
+            resultText.text = "Incorrect!";
             questions[curQuesNo].GetComponent<Question>().SetCorrect(false);
             changeTexture(curQuesNo, new Color(0.78f, 0.33f, 0.33f));//Color.red
         }       
@@ -128,8 +128,6 @@ public class QuestionController : MonoBehaviour
             if (is_line)
             {
                 Debug.Log("Bingo!");
-                questionUI.SetActive(false);
-                resultUI.SetActive(true);
                 bingoText.text = "Bingo!";
                 is_bingoed = true;
                 return;
@@ -155,8 +153,6 @@ public class QuestionController : MonoBehaviour
             if (is_line)
             {
                 Debug.Log("Bingo!");
-                questionUI.SetActive(false);
-                resultUI.SetActive(true);
                 bingoText.text = "Bingo!";
                 is_bingoed = true;
                 return;
@@ -165,8 +161,6 @@ public class QuestionController : MonoBehaviour
             if (jiugongge[0, 0] && jiugongge[1, 1] && jiugongge[2, 2])
             {
                 Debug.Log("Bingo!");
-                questionUI.SetActive(false);
-                resultUI.SetActive(true);
                 bingoText.text = "Bingo!";
                 is_bingoed = true;
                 return;
@@ -175,8 +169,6 @@ public class QuestionController : MonoBehaviour
             if (jiugongge[0, 2] && jiugongge[1, 1] && jiugongge[2, 0])
             {
                 Debug.Log("Bingo!");
-                questionUI.SetActive(false);
-                resultUI.SetActive(true);
                 bingoText.text = "Bingo!";
                 is_bingoed = true;
                 return;
@@ -184,8 +176,6 @@ public class QuestionController : MonoBehaviour
         }
         else
         {
-            questionUI.SetActive(false);
-            resultUI.SetActive(true);
             bingoText.text = "Already bingo!";
         }
         
