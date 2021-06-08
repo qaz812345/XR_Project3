@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30534047, g: 0.39533764, b: 0.58012354, a: 1}
+  m_IndirectSpecularColor: {r: 0.30474246, g: 0.39533493, b: 0.5789847, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3455,13 +3455,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154143461}
-  m_LocalRotation: {x: 0.4920976, y: -0.50780493, z: -0.49295714, w: -0.5069195}
+  m_LocalRotation: {x: 0.08465411, y: -0.97787887, z: 0.114775546, w: 0.15301386}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 271.7, y: 90.1, z: 0}
+  m_LocalEulerAnglesHint: {x: 374.5, y: 196.8, z: -7.7430005}
 --- !u!1 &1176448610
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,7 +8718,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: StaryNight
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -46861,7 +46861,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 915876402661597674, guid: afa2f37969011b04bb60fa7fed0eb1c1, type: 3}
+  - {fileID: 2100000, guid: 47e6d8e8cfd9d6c40b0b5cdd099b1c2f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
