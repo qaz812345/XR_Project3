@@ -10,8 +10,8 @@ public class ipadcontroller : MonoBehaviour
     public Sprite[] Picture;
     public GameObject[] Texture;
     public AudioSource upload_sound;
-
-
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +19,14 @@ public class ipadcontroller : MonoBehaviour
         Color trans = Camera.color;
         trans.a = 0;
         Camera.color = trans;
+       
         //Camera.SetActive();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ImgUpload(int a)
