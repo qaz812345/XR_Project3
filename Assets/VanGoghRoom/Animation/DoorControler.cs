@@ -6,13 +6,20 @@ using UnityEngine.SceneManagement;
 public class DoorControler : MonoBehaviour
 {
     Animator _dooranim;
+    //public Animator playeranim;
+    //public GameObject videoPlayer;
+   // public int timestop;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider col)
     {
         _dooranim.SetBool("isopen", false);
-        if(col.gameObject.tag == "key")
+        //playeranim.SetBool("iplayer", false);
+        if (col.gameObject.tag == "key")
         {
             _dooranim.SetBool("isopen", true);
+            //playeranim.SetBool("isplay", true);
+            //videoPlayer.SetActive(true);
+           // Destroy(videoPlayer, timestop);
             LoadNextScene();
         }
        
@@ -23,6 +30,9 @@ public class DoorControler : MonoBehaviour
     {
         
         _dooranim = this.transform.parent.GetComponent<Animator>();
+        
+      // playeranim.SetBool("isplay",false);
+        //videoPlayer.SetActive(false);
     }
 
     // Update is called once per frame
