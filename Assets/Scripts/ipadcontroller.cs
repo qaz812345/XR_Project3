@@ -8,6 +8,7 @@ public class ipadcontroller : MonoBehaviour
 
     public Image[] Frame;
     public Sprite[] Picture;
+    public GameObject[] Texture;
     public AudioSource upload_sound;
 
 
@@ -35,6 +36,7 @@ public class ipadcontroller : MonoBehaviour
             for (int num = 0; num <= 1; ++num)
             {
                 Frame[num].sprite = Picture[num];
+                Texture[num].SetActive(false);
                 upload_sound.Play();
             }
         }
