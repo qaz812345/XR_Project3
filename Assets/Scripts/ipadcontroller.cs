@@ -42,7 +42,9 @@ public class ipadcontroller : MonoBehaviour
         {
             Frame[ans].sprite = Picture[ans];
 
-             //Camera.color.a = 0;
+            //Camera.color.a = 0;
+        }
+
     }
     public void Selfie()
     {
@@ -51,7 +53,7 @@ public class ipadcontroller : MonoBehaviour
         Camera.color = trans;
 
             upload_sound.Play();
-        }      
+            
 
     }
 }
