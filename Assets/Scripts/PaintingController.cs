@@ -18,6 +18,7 @@ public class PaintingController : MonoBehaviour
     public AudioSource window_pop, window_close, correct_sound, incorrect_sound, star_sound;
     private int correct_counter = 0;
     private bool current_result = false;
+    
 
     void Start()
     {
@@ -49,7 +50,7 @@ public class PaintingController : MonoBehaviour
             infoText.text = correct_paintings[no].description;
             correct_counter += 1;
             current_result = true;
-            SetSkybox(correct_counter);
+            SetSkybox(correct_counter, new Color(0.3f, 0.3f, 0.3f));
         }
         else // Incorrect
         {
@@ -77,6 +78,22 @@ public class PaintingController : MonoBehaviour
             if (current_result)
             {
                 star_sound.Play();
+                /*for (int i=0; i<= 1000; i++)
+                {
+                    if(i % 10 == 0)
+                    {
+                        SetSkybox(correct_counter, new Color(0.7f, 0.7f, 0.7f));
+                    }
+                    else if (i % 20 == 0)
+                    {
+                        SetSkybox(correct_counter, new Color(0.5f, 0.5f, 0.5f));
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }*/
+                SetSkybox(correct_counter, new Color(0.5f, 0.5f, 0.5f));
                 current_result = false;
             }
             else
@@ -86,6 +103,7 @@ public class PaintingController : MonoBehaviour
  
         }
     }
+
     public void open(int butt)
     {
         int op = butt;
@@ -95,8 +113,30 @@ public class PaintingController : MonoBehaviour
             ipad.SetActive(false);
 
     }
-    private void SetSkybox(int no)
+
+    private void SetSkybox(int no, Color tint)
     {
         RenderSettings.skybox = skyboxes[no];
+        RenderSettings.skybox.SetColor("_Tint", tint);
+        /*Color start_color = new Color(0.3f, 0.3f, 0.3f);
+        Color end_color = new Color(1.0f, 0.0f, 0.0f);
+        Color lerpedColor = start_color;
+        //animate flah in 
+        float flashin = time / 2;
+        for (float t = 0; t <= flashin; t += Time.deltaTime)
+        {
+            //color change
+            lerpedColor = Color.Lerp(start_color, end_color, t / flashin);
+            RenderSettings.skybox.SetColor("_Tint", lerpedColor);
+            yield return null;
+        }
+        //animate flah out 
+        /*float flashout = time / 2;
+        for (float t = 0; t <= flashout; t += Time.deltaTime)
+        {
+            lerpedColor = Color.Lerp(end_color, start_color, t / flashin);
+            
+            yield return null;
+        } */
     }
 }
