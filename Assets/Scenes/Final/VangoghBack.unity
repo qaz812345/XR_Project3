@@ -6972,8 +6972,8 @@ MonoBehaviour:
   - {fileID: 5615918359383258113}
   - {fileID: 5615918360108428569}
   Picture:
-  - {fileID: 21300000, guid: 991066c1093c3ae4685c2b719ac66dba, type: 3}
-  - {fileID: 21300000, guid: e81d29e10df61ca4d850e4e4c80427e3, type: 3}
+  - {fileID: 21300000, guid: 33f730ad54e32014f8c24a6197717ca3, type: 3}
+  - {fileID: 21300000, guid: 358711f20d1573c48b1545affc70d686, type: 3}
   Texture:
   - {fileID: 1347551964}
   - {fileID: 1956586076}
@@ -41114,7 +41114,7 @@ MonoBehaviour:
   flashcolor: {r: 1, g: 1, b: 1, a: 1}
   lightcolor: {r: 1, g: 1, b: 1, a: 1}
   oldImg: {fileID: 5615918359383258113}
-  newImg: {fileID: 21300000, guid: 991066c1093c3ae4685c2b719ac66dba, type: 3}
+  newImg: {fileID: 21300000, guid: 33f730ad54e32014f8c24a6197717ca3, type: 3}
   clickImg: {fileID: 0}
   ipad: {fileID: 0}
   canera_sound: {fileID: 0}
@@ -42323,7 +42323,7 @@ MonoBehaviour:
   flashcolor: {r: 1, g: 1, b: 1, a: 1}
   lightcolor: {r: 1, g: 1, b: 1, a: 1}
   oldImg: {fileID: 5615918360108428569}
-  newImg: {fileID: 21300000, guid: e81d29e10df61ca4d850e4e4c80427e3, type: 3}
+  newImg: {fileID: 21300000, guid: 358711f20d1573c48b1545affc70d686, type: 3}
   clickImg: {fileID: 0}
   ipad: {fileID: 0}
   canera_sound: {fileID: 0}
