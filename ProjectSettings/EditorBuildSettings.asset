@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Final/VangoghRoom.unity
-    guid: b279f4eebb09a1b4a94d6f55a250063f
   - enabled: 0
     path: Assets/Scenes/PassVideo.unity
     guid: 79b9c19e378fa0243a09b75e794e3b38
+  - enabled: 0
+    path: Assets/Scenes/PassVideo1.unity
+    guid: 751b18e71c9f344488ca08ebd73fe558
+  - enabled: 0
+    path: Assets/Scenes/Final/VangoghRoom.unity
+    guid: b279f4eebb09a1b4a94d6f55a250063f
   - enabled: 0
     path: Assets/Scenes/Final/Cafeoutside2.unity
     guid: febaa3db1dca96e4383510b83c7d4411
@@ -18,11 +21,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Cafeinside2.unity
     guid: f5ce1cb9670d8b24f90a5a31204129bb
   - enabled: 0
+    path: Assets/Scenes/PassVideo2.unity
+    guid: 1cbb21cd800976e4b9554cdd1eb60930
+  - enabled: 0
+    path: Assets/Scenes/PassVideo3.unity
+    guid: f22d5cd038932b64199f0b83a8c6cd27
+  - enabled: 0
     path: Assets/Scenes/Final/StarryNight1.unity
     guid: 15297fde7167ae14daf6b5e6f87a8138
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Final/VangoghBack.unity
     guid: df0d585d82040b040996a2913f648f6b
+  - enabled: 0
+    path: Assets/Scenes/PassVideo4.unity
+    guid: 279e8d9aaa3222a42a95703e5ec10165
+  - enabled: 0
+    path: Assets/Scenes/PassVideo5.unity
+    guid: 62855bb7387f4854d90b6c0971650d56
   - enabled: 0
     path: Assets/Scenes/Final/Cafeinside1.unity
     guid: 7c2baccd07d6ee84f819c143cd55b0a8
