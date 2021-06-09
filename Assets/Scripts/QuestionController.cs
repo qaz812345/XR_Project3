@@ -11,7 +11,7 @@ public class QuestionController : MonoBehaviour
     public GameObject questionUI;
     public GameObject resultUI;
     public List<GameObject> buttons;
-    public AudioSource window_pop, window_close, correct_sound, incorrect_sound, bingo_sound;
+    public AudioSource window_pop, window_close, correct_sound, incorrect_sound, bingo_sound, give_wine_sound;
     public Animator boss_animator;
     private Text questionText;
     private Text resultText;
@@ -180,6 +180,7 @@ public class QuestionController : MonoBehaviour
     private void Bingo()
     {
         Debug.Log("Bingo!");
+        give_wine_sound.Play();
         bingoText.text = "Bingo!";
         is_bingoed = true;
         bingo_sound.Play();
