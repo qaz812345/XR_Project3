@@ -7,18 +7,8 @@ public class ipadcontroller : MonoBehaviour
     public Image Camera;
     public Image[] Frame;
     public Sprite[] Picture;
+    public AudioSource upload_sound;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void ImgUpload(int a)
     {
         int ans = a;
@@ -27,9 +17,13 @@ public class ipadcontroller : MonoBehaviour
             for (int num = 0; num <= 1; ++num)
             {
                 Frame[num].sprite = Picture[num];
+                upload_sound.Play();
             }
         }
         else
+        {
             Frame[ans].sprite = Picture[ans];
+            upload_sound.Play();
+        }      
     }
 }
