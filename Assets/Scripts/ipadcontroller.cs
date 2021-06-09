@@ -5,13 +5,19 @@ using UnityEngine.UI;
 public class ipadcontroller : MonoBehaviour
 {
     public Image Camera;
+
     public Image[] Frame;
     public Sprite[] Picture;
+
 
     // Start is called before the first frame update
     void Start()
     {
         
+        Color trans = Camera.color;
+        trans.a = 0;
+        Camera.color = trans;
+        //Camera.SetActive();
     }
 
     // Update is called once per frame
@@ -22,7 +28,7 @@ public class ipadcontroller : MonoBehaviour
     public void ImgUpload(int a)
     {
         int ans = a;
-        if(ans == 10)
+        if (ans == 10)
         {
             for (int num = 0; num <= 1; ++num)
             {
@@ -31,5 +37,12 @@ public class ipadcontroller : MonoBehaviour
         }
         else
             Frame[ans].sprite = Picture[ans];
+             //Camera.color.a = 0;
+    }
+    public void Selfie()
+    {
+        Color trans = Camera.color;
+        trans.a = 1;
+        Camera.color = trans;
     }
 }

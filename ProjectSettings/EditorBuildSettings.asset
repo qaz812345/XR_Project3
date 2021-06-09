@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/VangoghRoom.unity
     guid: b279f4eebb09a1b4a94d6f55a250063f
   - enabled: 0
+    path: Assets/Scenes/PassVideo.unity
+    guid: 79b9c19e378fa0243a09b75e794e3b38
+  - enabled: 0
     path: Assets/Scenes/Final/Cafeoutside2.unity
     guid: febaa3db1dca96e4383510b83c7d4411
   - enabled: 0
