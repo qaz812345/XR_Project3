@@ -8,6 +8,7 @@ public class ipadcontroller : MonoBehaviour
 
     public Image[] Frame;
     public Sprite[] Picture;
+    public AudioSource upload_sound;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class ipadcontroller : MonoBehaviour
     {
         
     }
+
     public void ImgUpload(int a)
     {
         int ans = a;
@@ -33,10 +35,13 @@ public class ipadcontroller : MonoBehaviour
             for (int num = 0; num <= 1; ++num)
             {
                 Frame[num].sprite = Picture[num];
+                upload_sound.Play();
             }
         }
         else
+        {
             Frame[ans].sprite = Picture[ans];
+
              //Camera.color.a = 0;
     }
     public void Selfie()
@@ -44,5 +49,9 @@ public class ipadcontroller : MonoBehaviour
         Color trans = Camera.color;
         trans.a = 1;
         Camera.color = trans;
+
+            upload_sound.Play();
+        }      
+
     }
 }

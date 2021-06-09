@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class changeimg : MonoBehaviour
 {
     [SerializeField] flashimg flashImg;
@@ -12,6 +13,7 @@ public class changeimg : MonoBehaviour
     public Sprite newImg;
     public Image clickImg;
     public GameObject ipad;
+    public AudioSource canera_sound;
     // public Image flashImg;
 
     // Start is called before the first frame update
@@ -44,6 +46,7 @@ public class changeimg : MonoBehaviour
     }
     public void Lightflash()
     {
+        canera_sound.Play();
         camlight.StartFlashlight(.25f, .6f, 30.0f, lightcolor);
         Destroy(camlight, 0.6f);
     }
