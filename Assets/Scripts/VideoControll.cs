@@ -28,12 +28,12 @@ public class VideoControll : MonoBehaviour
             }
             else
             {
-               
-                timeRemaining = 0;
+
+                timeRemaining = 0.0f;
                 timerIsRunning = false;
-               // UI.SetActive(true);
+                // UI.SetActive(true);
                 LoadNextScene();
-                
+
 
             }
         }
@@ -42,4 +42,5 @@ public class VideoControll : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    
 }
