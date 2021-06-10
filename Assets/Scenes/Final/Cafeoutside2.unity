@@ -3676,7 +3676,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558824100}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb35f1adb79151f4a919537ce6cfac85, type: 3}
   m_Name: 
@@ -3684,6 +3684,7 @@ MonoBehaviour:
   sound: {fileID: 0}
   soundos: {fileID: 0}
   lightos: {fileID: 0}
+  startsounds: {fileID: 558824102}
 --- !u!1 &569332032
 GameObject:
   m_ObjectHideFlags: 0
@@ -22041,6 +22042,7 @@ MonoBehaviour:
   sound: {fileID: 1586095644}
   soundos: {fileID: 0}
   lightos: {fileID: 0}
+  startsounds: {fileID: 0}
 --- !u!33 &1275523561860083251
 MeshFilter:
   m_ObjectHideFlags: 0

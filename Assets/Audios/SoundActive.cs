@@ -7,13 +7,13 @@ public class SoundActive : MonoBehaviour
     public AudioSource sound;
     public AudioSource soundos;
     public AudioSource lightos;
-    //public AudioSource startsounds;
+    public AudioSource startsounds;
   //  public GameObject os;
    //c public GameObject os;
     // Start is called before the first frame update
     void Start()
     {
-        //startsounds.PlayDelayed(1.0f);
+        startsounds.PlayDelayed(1.0f);
     }
 
     // Update is called once per frame
