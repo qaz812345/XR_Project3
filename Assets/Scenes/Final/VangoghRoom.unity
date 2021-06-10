@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30534053, g: 0.39533767, b: 0.5801236, a: 1}
+  m_IndirectSpecularColor: {r: 0.30534047, g: 0.39533764, b: 0.58012354, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1874,7 +1874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &556133004
 Light:
   m_ObjectHideFlags: 0
@@ -2762,17 +2762,17 @@ PrefabInstance:
     - target: {fileID: 8293515378432280447, guid: ad14dbb1545cbeb499ba76f5c3f7ea18,
         type: 3}
       propertyPath: m_Range
-      value: 4.72715
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8293515378432280447, guid: ad14dbb1545cbeb499ba76f5c3f7ea18,
         type: 3}
       propertyPath: m_Intensity
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8293515378432280447, guid: ad14dbb1545cbeb499ba76f5c3f7ea18,
         type: 3}
       propertyPath: m_Lightmapping
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad14dbb1545cbeb499ba76f5c3f7ea18, type: 3}
@@ -5224,7 +5224,7 @@ PrefabInstance:
     - target: {fileID: 1238144729505765310, guid: 80d76d2eb860a40498ab0420d36c366e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1238144729505765311, guid: 80d76d2eb860a40498ab0420d36c366e,
         type: 3}
@@ -5772,7 +5772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1493461533
 Transform:
   m_ObjectHideFlags: 0
@@ -6616,7 +6616,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -8723,6 +8723,7 @@ GameObject:
   - component: {fileID: 5993748892431750652}
   - component: {fileID: 3078814787678443854}
   - component: {fileID: 5615918359659110332}
+  - component: {fileID: 126721447430204196}
   m_Layer: 0
   m_Name: Mesh_8_003
   m_TagString: Untagged
@@ -8730,6 +8731,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &126721447430204196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126721447430204195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35f1adb79151f4a919537ce6cfac85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 266096459}
+  soundos: {fileID: 276236970}
+  lightos: {fileID: 585436316}
+  startsounds: {fileID: 0}
 --- !u!1 &129533419302833320
 GameObject:
   m_ObjectHideFlags: 0
@@ -33966,8 +33983,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.3011681, y: 1, z: 44.37117}
+  m_Center: {x: -0.15058379, y: 1.5205051e-14, z: -21.685545}
 --- !u!65 &5551059087745998621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35405,7 +35422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5614918359229742818}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.061246, y: -0.00574, z: -0.0072678}
+  m_LocalPosition: {x: 0.06125, y: -0.00574, z: -0.00507}
   m_LocalScale: {x: 0.0007981569, y: 0.0015866053, z: 0.00009999997}
   m_Children:
   - {fileID: 5611918358752795766}
@@ -35817,7 +35834,6 @@ GameObject:
   - component: {fileID: 5601925557041397488}
   - component: {fileID: 5571066295362149116}
   - component: {fileID: 5510977132113742060}
-  - component: {fileID: 5614918359229742819}
   m_Layer: 8
   m_Name: ipad (1)
   m_TagString: Untagged
@@ -35825,22 +35841,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5614918359229742819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5614918359229742818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb35f1adb79151f4a919537ce6cfac85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 266096459}
-  soundos: {fileID: 276236970}
-  lightos: {fileID: 585436316}
-  startsounds: {fileID: 0}
 --- !u!1 &5614918359307920700
 GameObject:
   m_ObjectHideFlags: 0
@@ -38502,11 +38502,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126721447430204195}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.005967912, y: 0.0040031974, z: 0.0064709997}
-  m_Center: {x: 0.0016519555, y: -0.0034285958, z: -0.005908498}
+  m_Size: {x: 0.005967911, y: 0.004003198, z: 0.004023067}
+  m_Center: {x: 0.0016519622, y: -0.0034285954, z: -0.0046845432}
 --- !u!65 &5615918359727777860
 BoxCollider:
   m_ObjectHideFlags: 0

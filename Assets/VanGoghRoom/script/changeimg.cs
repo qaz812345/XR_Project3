@@ -19,7 +19,7 @@ public class changeimg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //ipad.SetActive(false);
+        ipad.SetActive(false);
     }
 
     // Update is called once per frame
@@ -52,8 +52,8 @@ public class changeimg : MonoBehaviour
     }
     public void loadInfo(int input)
     {
-        int no = (input / 10) - 1;
-        int ans = input % 10;
+        //int no = (input / 10) - 1;
+        int ans = input;
         if (ans == 1)
             ipad.SetActive(true);
         else

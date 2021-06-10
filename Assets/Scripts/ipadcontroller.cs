@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class ipadcontroller : MonoBehaviour
 {
     public Image Camera;
@@ -57,6 +59,16 @@ public class ipadcontroller : MonoBehaviour
 
             upload_sound.Play();
             
+
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        /*if(sceneindex == 4)
+            SceneManager.LoadScene(0);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);*/
 
     }
 }

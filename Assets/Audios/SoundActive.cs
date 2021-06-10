@@ -8,6 +8,7 @@ public class SoundActive : MonoBehaviour
     public AudioSource soundos;
     public AudioSource lightos;
     public AudioSource startsounds;
+    private bool isagain = false;
   //  public GameObject os;
    //c public GameObject os;
     // Start is called before the first frame update
@@ -23,11 +24,12 @@ public class SoundActive : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "os")
+        if (other.gameObject.tag == "os" && isagain == false)
         {
             sound.Play();
             soundos.Play();
             lightos.PlayDelayed(10.0f);
+            isagain = true;
         }
     }
 }

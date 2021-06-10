@@ -1263,7 +1263,7 @@ PrefabInstance:
     - target: {fileID: 6407989363918872947, guid: 275e847900e8ca8478e8f103c4319d31,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0489
+      value: 0.064
       objectReference: {fileID: 0}
     - target: {fileID: 6407989363918872947, guid: 275e847900e8ca8478e8f103c4319d31,
         type: 3}
@@ -1310,6 +1310,12 @@ PrefabInstance:
 --- !u!4 &266784244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6407989363918872947, guid: 275e847900e8ca8478e8f103c4319d31,
+    type: 3}
+  m_PrefabInstance: {fileID: 266784243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &266784245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6027523622769130441, guid: 275e847900e8ca8478e8f103c4319d31,
     type: 3}
   m_PrefabInstance: {fileID: 266784243}
   m_PrefabAsset: {fileID: 0}
@@ -3567,7 +3573,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558824100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.79, y: 0.02, z: -3.59}
+  m_LocalPosition: {x: 4.9, y: 0.02, z: -3.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 781156526}
@@ -3586,7 +3592,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: f10d63c68c016364a9cbdc289661459b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 0.8
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -3644,7 +3650,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.16944444
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5735,6 +5741,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: appleUI 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3998821675015277771, guid: a03a6a7b90c90ce488924b7e93638802,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 904619415}
+    - target: {fileID: 3998821675015277771, guid: a03a6a7b90c90ce488924b7e93638802,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998821675015277771, guid: a03a6a7b90c90ce488924b7e93638802,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a03a6a7b90c90ce488924b7e93638802, type: 3}
 --- !u!224 &904619413 stripped
@@ -5743,6 +5764,33 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 904619412}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &904619414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3998821675015277781, guid: a03a6a7b90c90ce488924b7e93638802,
+    type: 3}
+  m_PrefabInstance: {fileID: 904619412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &904619415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904619414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8dbdfe64ec964641929f5e7e6dc9345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashImg: {fileID: 0}
+  camlight: {fileID: 0}
+  flashcolor: {r: 1, g: 1, b: 1, a: 1}
+  lightcolor: {r: 1, g: 1, b: 1, a: 1}
+  oldImg: {fileID: 0}
+  newImg: {fileID: 0}
+  clickImg: {fileID: 0}
+  ipad: {fileID: 266784245}
+  canera_sound: {fileID: 0}
 --- !u!1 &928303539
 GameObject:
   m_ObjectHideFlags: 0
@@ -27266,8 +27314,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000
-  field of view: 90
+  far clip plane: 100
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

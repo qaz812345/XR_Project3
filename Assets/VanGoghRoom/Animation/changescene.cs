@@ -32,12 +32,12 @@ public class changescene: MonoBehaviour
     }
     public void LoadNextScene()
     {
-        int sceneindex = SceneManager.GetActiveScene().buildIndex;
-        if(sceneindex == 4)
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        /*if(sceneindex == 4)
             SceneManager.LoadScene(0);
         else
-            SceneManager.LoadScene(sceneindex + 1);
-       
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);*/
+
     }
     /*IEnumerator LoadtoScene(int SceneIndex)
     {
