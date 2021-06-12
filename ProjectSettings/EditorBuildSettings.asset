@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PassVideo.unity
     guid: 79b9c19e378fa0243a09b75e794e3b38
-  - enabled: 0
-    path: Assets/Scenes/Final/VangoghRoomStart.unity
-    guid: bef327d768966b34e91d6fae1ac71bd2
   - enabled: 1
     path: Assets/Scenes/Final/VangoghRoom.unity
     guid: b279f4eebb09a1b4a94d6f55a250063f
@@ -53,4 +50,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PassVideo1.unity
     guid: 751b18e71c9f344488ca08ebd73fe558
+  - enabled: 0
+    path: Assets/Scenes/Final/VangoghRoomStart.unity
+    guid: bef327d768966b34e91d6fae1ac71bd2
   m_configObjects: {}

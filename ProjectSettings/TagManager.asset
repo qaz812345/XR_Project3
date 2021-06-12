@@ -8,6 +8,9 @@ TagManager:
   - door
   - question
   - os
+  - letter
+  - flower
+  - chair
   layers:
   - Default
   - TransparentFX

@@ -34,7 +34,7 @@ public class ipadcontroller : MonoBehaviour
     public void ImgUpload(int a)
     {
         int ans = a;
-        if (ans == 10)
+        if (ans == 1)
         {
             for (int num = 0; num <= 1; ++num)
             {

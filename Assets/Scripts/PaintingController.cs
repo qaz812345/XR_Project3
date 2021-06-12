@@ -22,7 +22,7 @@ public class PaintingController : MonoBehaviour
 
     void Start()
     {
-        Destroy(startUI,5.0f);
+        Destroy(startUI,12.0f);
         ipad.SetActive(false);
         resultUI.SetActive(false);
         correct_borad.SetActive(false);
@@ -50,7 +50,7 @@ public class PaintingController : MonoBehaviour
             infoText.text = correct_paintings[no].description;
             correct_counter += 1;
             current_result = true;
-            SetSkybox(correct_counter, new Color(0.3f, 0.3f, 0.3f));
+            SetSkybox(correct_counter);
         }
         else // Incorrect
         {
@@ -93,7 +93,7 @@ public class PaintingController : MonoBehaviour
                         continue;
                     }
                 }*/
-                SetSkybox(correct_counter, new Color(0.5f, 0.5f, 0.5f));
+                SetSkybox(correct_counter);
                 current_result = false;
             }
             else
@@ -114,10 +114,10 @@ public class PaintingController : MonoBehaviour
 
     }
 
-    private void SetSkybox(int no, Color tint)
+    private void SetSkybox(int no)
     {
         RenderSettings.skybox = skyboxes[no];
-        RenderSettings.skybox.SetColor("_Tint", tint);
+        //RenderSettings.skybox.SetColor("_Tint", tint);
         /*Color start_color = new Color(0.3f, 0.3f, 0.3f);
         Color end_color = new Color(1.0f, 0.0f, 0.0f);
         Color lerpedColor = start_color;
